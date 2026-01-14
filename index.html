@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Daniela López</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="flex w-full fixed top-0 z-1">
+        <nav id="navbar" class="flex justify-content-between w-full navbar">
+            <span class="logo cursor-pointer">
+                <i class="fa-solid fa-circle-user"></i>
+                Daniela López
+            </span>
+            <input type="checkbox" aria-label="Checkbox menu hamburger" class="checkbox xl:hidden">
+            <div class="hamburger_lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="header_info flex align-items-center gap-3">
+                <ul class="flex flex-column xl:flex-row list-none">
+                    <li onclick="scrollToSection('inicio')"><a href="#inicio">Inicio</a></li>
+                    <li onclick="scrollToSection('about')"><a href="#about">Sobre mi</a></li>
+                    <li onclick="scrollToSection('proyectos')"><a href="#proyectos">Proyectos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container" id="inicio">
+        <section> <!--Inicio-->
+            <h1>Daniela López</h1>
+            <h2>Desarrolladora Fullstack Junior</h2>
+            <p>Programadora en proceso, con experiencia desarrollando aplicaciones de manera colaborativa. Aficionada
+                por aprender y mejorar constantemente.</p>
+            <div class="social-links flex align-items-center gap-5">
+                <a href="https://github.com/Danne013" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/daniela-lópez-508678357" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <!--
+                <a href="https://www.youtube.com/@Fishy_Moonfish" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                        -->
+            </div>
+            <div class="hireMe_button pt-4 flex justify-content-end">
+                <a href="/assets/Daniela López CV.pdf" class="cursor-pointer no-underline border-round-lg text-xl:text-sm"
+                    aria-label="Descargar curriculum" download>CV <i class="fa-solid fa-download"></i></a>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="container" id="about&skills">
+        <section id="about" class="flex flex-wrap gap-7"> <!--About me-->
+            <div class="flex-1 min-w-[250px]">
+                <h1>Sobre mí</h1>
+                <p> Soy desarrolladora de software en mi último año de carrera, con experiencia en aplicaciones web y de
+                    escritorio.
+                </p>
+                <p>Me destaco por mi atención al detalle, creando interfaces amigables en el front-end y asegurando
+                    validaciones sólidas en el back-end. </p>
+                <p>Actualmente, busco seguir creciendo en despliegue de aplicaciones web, servidores y ciclo completo de
+                    aplicaciones.</p>
+            </div>
+            <div id="skills" class="flex-1 min-w-[250px]">
+                <h1>Habilidades</h1>
+                <div class="skills-progress">
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="html">Avanzado</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="css">Básico</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="javascript">Intermedio</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="javascript">Intermedio</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>PHP</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="php">Intermedio</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>C++</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="c1">Intermedio</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>C Sharp</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="c1">Básico</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>SQL</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="sql">Intermedio</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section id="proyectos"> <!--Portafolio-->
+            <h1 class="text-center pb-4 xl:pb-6">Proyectos Académicos</h1>
+            <div class="slideshow">
+                <div class="slide">
+                    <div class="content">
+                        <div class="content-top">
+                            <h2>Sistema de nóminas</h2>
+                            <p>
+                                Aplicación de escritorio que simula el sistema de nómina de una empresa ficticia,
+                                permite a los empleados consultar su recibo de pago de forma ordenada.
+                            </p>
+                            <p>
+                                El sistema es administrado por un usuario con control total sobre la gestión de
+                                empleados, departamentos y puestos. Este usuario también aplica las percepciones y
+                                deducciones para el cálculo de la nómina.
+                            </p>
+                            <p class="project-note">Proyecto realizado de manera colaborativa.</p>
+                        </div>
+                        <div class="content-bottom">
+                            <div class="project-tech">
+                                <span>Windows Forms</span>
+                                <span>C Sharp</span>
+                                <span>SQL</span>
+                            </div>
+                            <!--
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fas fa-link"></i><strong>Video Demo</strong></a>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    <div class="image-reference">
+                        <img src="/assets/Sistema de Nóminas.png" alt="Sistema de Nóminas">
+                    </div>
+
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <div class="content-top">
+                            <h2>DouDou!</h2>
+                            <p>
+                                Plataforma web tipo blog pensada como un espacio para
+                                coleccionistas de figuras, donde los usuarios pueden compartir publicaciones y
+                                interactuar con ellas mediante comentarios.
+                            </p>
+                            <p>
+                                La plataforma cuenta con filtros que facilitan la búsqueda de contenido, esto permite a
+                                los usuarios encontrar publicaciones de forma más eficiente.
+                            </p>
+                            <p class="project-note">Proyecto realizado de manera colaborativa.</p>
+                        </div>
+                        <div class="content-bottom">
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>Java</span>
+                                <span>SQL</span>
+                            </div>
+                            <!--
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fas fa-link"></i><strong>Video Demo</strong></a>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    <div class="image-reference">
+                        <img src="/assets/DouDou!.png" alt="DouDou!">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <div class="content-top">
+                            <h2>Gato Futbolero</h2>
+                            <p>
+                                Aplicación web de tipo red social con temática de los mundiales de la FIFA, enfocada en
+                                la interacción entre usuarios a través de contenido relacionado con estos torneos.
+                            </p>
+                            <p>
+                                Fue diseñada para estar accesible a todo público, sin embargo, los usuarios deben contar
+                                con una cuenta para poder interactuar mediante publicaciones, likes, comentarios y
+                                visualizaciones, mientras que el administrador se encarga de la gestión de infografías,
+                                moderación de publicaciones y administración de usuarios.
+                            </p>
+                            <p class="project-note">Proyecto realizado de manera colaborativa.</p>
+                        </div>
+                        <div class="content-bottom">
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>SQL</span>
+                            </div>
+                            <!--
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fas fa-link"></i><strong>Video Demo</strong></a>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    <div class="image-reference">
+                        <img src="/assets/Gato Futbolero.png" alt="Gato Futbolero">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="carousel-controls">
+        <button id="prev">‹</button>
+        <button id="next">›</button>
+    </div>
+
+    <div class="container">
+        <footer id="contacto" class="footer">
+            <span class="footer-copy">
+                © 2026 — Daniela López
+            </span>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
